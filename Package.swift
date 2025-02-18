@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "MTGDeckBuilder",
-    platforms: [.iOS(.15)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "MTGDeckBuilder",
