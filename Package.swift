@@ -1,17 +1,14 @@
-// swift-tools-version: 5.7
-
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
     name: "MTGDeckBuilder",
-    platforms: [
-        .iOS(.v16)
-    ],
+    platforms: [.iOS(v15)],
     products: [
         .library(
             name: "MTGDeckBuilder",
             targets: ["MTGDeckBuilder"]
-        )
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/JacobHearst/ScryfallKit.git", from: "5.15.0"),
@@ -24,6 +21,6 @@ let package = Package(
         .testTarget(
             name: "MTGDeckBuilderTests",
             dependencies: ["MTGDeckBuilder"]
-        )
+        ),
     ]
 )
