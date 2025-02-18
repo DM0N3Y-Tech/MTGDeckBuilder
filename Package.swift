@@ -14,7 +14,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/stevemoser/ScryfallKit.git", from: "1.0.0")
+        .package(url: "https://github.com/JacobHearst/ScryfallKit.git", from: "5.15.0"),
     ],
     targets: [
         .target(
